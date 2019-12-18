@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pkg528.project.CustomerGUIController">
+  <children>
+    <Label layoutX="260.0" layoutY="38.0" text="Welcome Customer!">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="54.0" layoutY="113.0" text="Deposit Amount ($):" />
+    <Label layoutX="47.0" layoutY="185.0" text="Withdraw Amount ($):" />
+    <Label layoutX="17.0" layoutY="264.0" text="Onlne Purchase Amount ($):" />
+    <TextField fx:id="deposit_amount" layoutX="240.0" layoutY="110.0" prefWidth="200.0" />
+    <TextField fx:id="withdraw_amount" layoutX="240.0" layoutY="185.0" prefWidth="200.0" />
+    <Button fx:id="withdraw" layoutX="491.0" layoutY="178.0" mnemonicParsing="false" onAction="#withdrawButtonPushed" prefHeight="50.0" prefWidth="160.0" text="Withdraw" />
+    <Button fx:id="deposit" layoutX="491.0" layoutY="101.0" mnemonicParsing="false" onAction="#depositButtonPushed" prefHeight="50.0" prefWidth="160.0" text="Deposit" />
+    <Button fx:id="checkbalance" layoutX="433.0" layoutY="354.0" mnemonicParsing="false" onAction="#checkbalanceButtonPushed" prefHeight="66.0" prefWidth="206.0" text="Check Balance" />
+    <TextField fx:id="amount_onlinepurchase" layoutX="250.0" layoutY="262.0" prefWidth="200.0" />
+    <Button fx:id="clogout" layoutX="214.0" layoutY="469.0" minHeight="29.9998779296875" mnemonicParsing="false" onAction="#clogoutButtonPushed" prefHeight="87.0" prefWidth="267.0" text="Logout" />
+    <Button fx:id="onlinepurchase" layoutX="491.0" layoutY="252.0" mnemonicParsing="false" onAction="#onlinepurchaseButtonPushed" prefHeight="50.0" prefWidth="160.0" text="Make Purchase" />
+    <Label fx:id="outlabel" layoutX="47.0" layoutY="371.0" prefHeight="30.0" prefWidth="309.0" text="Label" />
+  </children>
+</AnchorPane>
